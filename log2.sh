@@ -1,0 +1,2 @@
+echo -e "Последовательность посещения комнат:\n$(grep -i "Перемещение к точке" .ros/log/4435003c-34dc-11f1-9bd8-88a29e6c9104/voice_nav_node-3.log | awk '{print $NF}'| sed  's/ю/я/' | sed  's/у/а/' | nl -s ".")"
+echo -e "Последовательность посещения комнат:\n$(grep -i "Перемещение к точке" .ros/log/4435003c-34dc-11f1-9bd8-88a29e6c9104/voice_nav_node-3.log | awk '{print $NF}'| sed  's/ю/я/' | sed  's/у/а/' | nl -s ".")" >> log.txt
